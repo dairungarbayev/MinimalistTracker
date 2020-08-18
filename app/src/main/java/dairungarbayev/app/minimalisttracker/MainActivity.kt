@@ -37,9 +37,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         getViews()
-
-        mainButton.setOnClickListener(mainButtonListener)
-        resetButton.setOnClickListener(resetListener)
     }
 
     //data is retrieved and views are set
@@ -48,6 +45,9 @@ class MainActivity : AppCompatActivity() {
         getDataFromPrefs()
         checkData()
         setViews()
+
+        mainButton.setOnClickListener(mainButtonListener)
+        resetButton.setOnClickListener(resetListener)
     }
 
     override fun onPause() {
